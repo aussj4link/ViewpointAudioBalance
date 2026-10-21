@@ -4,21 +4,28 @@ Independent volume controls for world effects and background ambience in Project
 
 If footsteps, doors, combat or the ambient soundscape feel too quiet in Viewpoint, this mod lets you raise them to a comfortable level without turning up music or menu clicks. It adjusts playback gain while retaining the game's sound events, spatial positioning and distance settings.
 
-**Version 0.1.0 — first Workshop candidate.** The project owner's initial in-game test was successful in first and third person, with working gain choices and a live on/off control. See VALIDATION.md for evidence and remaining test coverage. This is not a claim of compatibility with every mod or future build.
+**Version 0.1.0 — initial Steam Workshop release.** All 12 manual Workshop regression checks were reported as passing in Project Zomboid Build 42.21. This validates the tested configuration, not compatibility with every mod or future build.
 
-[Testing and validation](TESTING.md)
-
-Workshop Mod Here: https://steamcommunity.com/sharedfiles/filedetails/?id=3823974655&utm_source=chatgpt.com
+[Steam Workshop page](https://steamcommunity.com/sharedfiles/filedetails/?id=3823974655) | [Testing and validation](TESTING.md) | [Detailed validation notes](VALIDATION.md)
 
 ## Installation
+
+### Steam Workshop (recommended)
+
+1. Subscribe to [Viewpoint - Audio Balance](https://steamcommunity.com/sharedfiles/filedetails/?id=3823974655) and its required items, **Project Viewpoint** and **ZombieBuddy**.
+2. Fully close and restart Project Zomboid after installation so the Java component can load.
+3. Enable **Viewpoint - Audio Balance** for the save you want to use.
+4. Open **Options → Mods → Viewpoint - Audio Balance** and adjust the two gain controls.
+
+### Manual installation (alternative)
 
 1. Fully close Project Zomboid.
 2. Extract `ViewpointAudioBalance` into `%USERPROFILE%\Zomboid\mods\`.
 3. Confirm `%USERPROFILE%\Zomboid\mods\ViewpointAudioBalance\42\mod.info` exists.
-4. Enable **Viewpoint - Audio Balance**, including for the save you want to use.
-5. Open **Options → Mods → Viewpoint - Audio Balance** and adjust the two gain controls.
+4. Enable the mod for your save and fully restart the game.
+5. Open **Options → Mods → Viewpoint - Audio Balance** to configure it.
 
-The compiled JAR is included. Keep your existing Viewpoint/ZombieBuddy installation; no compiler or manual game-file edits are needed to play. See WORKSHOP_SETUP.md for upload preparation.
+The compiled JAR is included. Keep your existing Viewpoint/ZombieBuddy installation; no compiler or manual game-file edits are needed to play. Avoid keeping both a local development copy and a Workshop copy enabled at the same time. See WORKSHOP_SETUP.md for upload preparation.
 
 ## Controls
 
@@ -48,11 +55,11 @@ There is one small hook at an existing clip-volume calculation, with no extra up
 
 ## Troubleshooting
 
-Look for `[VAB]` entries in `%USERPROFILE%\Zomboid\console.txt`: Java loading, native options registration and selected-gain messages. The tested JAR retains its original `Experimental 0.1.0` diagnostic label; this candidate uses that exact tested binary.
+Look for `[VAB]` entries in `%USERPROFILE%\Zomboid\console.txt`: Java loading, native options registration and selected-gain messages. The tested JAR retains its original `Experimental 0.1.0` diagnostic label; the Workshop release uses that tested binary.
 
 If controls appear but do nothing, check Java-mod loading and the installed agent version, then fully restart. If only particular sounds fail to respond, report their names/context and camera mode.
 
-Bug reports should include game/Viewpoint/ZombieBuddy versions, active mods, both gain values and console.txt. Source and build instructions are included. No Workshop item or source repository has been published yet.
+Report bugs through the Steam Workshop comments or GitHub. Include your game, Viewpoint and ZombieBuddy versions, active mods, both gain values and relevant `console.txt` messages. Source and build instructions are included.
 
 ## Credits and license
 
