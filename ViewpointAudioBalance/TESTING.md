@@ -13,3 +13,37 @@ Use a disposable save. Lower Windows/headphone output before testing the new gai
 9. Reload the save and fully restart to check persistence. To remove the Java hook, disable this companion and fully restart; a save reload alone does not unload an instrumented method. The original Spatial Zombie Audio mod remains separate.
 
 Send console.txt and report: camera mode; effects/ambience choices; exact sounds that respond or do not; any distortion; and whether isometric, menus/music or directional/muffled audio changed. The code's mode/category tests are not a substitute for these in-game comparisons.
+
+## Release validation — v0.1.0 (2026-10-21)
+
+**Game:** Project Zomboid Build 42.21  
+**Distribution:** Steam Workshop  
+**Workshop ID:** 3823974655  
+**Required mods:** Project Viewpoint and ZombieBuddy  
+**Result:** PASS — 12/12 manual Workshop regression checks
+
+### Validation summary
+
+The Workshop-installed version was tested in single-player gameplay after removing the local development copy.
+
+All 12 checks in the release regression checklist were reported as passing, covering:
+
+- Workshop loading and settings availability
+- World-effects and background-ambience gain controls
+- Independent adjustment, neutral gain, muting and boosting
+- First-person, third-person and isometric behavior
+- Music and UI sound isolation
+- Settings persistence and stability
+
+### Observed configuration
+
+- World effects gain: 6x
+- Background ambience gain: 3x
+
+The tester reported improved audibility of footsteps, doors and environmental sounds while retaining comfortable music volume.
+
+### Scope and limitations
+
+This is a successful manual validation of the tested Workshop configuration, not a guarantee of compatibility with all mod combinations.
+
+The nine detailed procedures above remain the reference for future integration and regression testing. Their individual results should be documented separately when available.
