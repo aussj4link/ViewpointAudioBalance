@@ -6,6 +6,10 @@ If footsteps, doors, combat or the ambient soundscape feel too quiet in Viewpoin
 
 **Version 0.1.0 — first Workshop candidate.** The project owner's initial in-game test was successful in first and third person, with working gain choices and a live on/off control. See VALIDATION.md for evidence and remaining test coverage. This is not a claim of compatibility with every mod or future build.
 
+[Testing and validation](TESTING.md)
+
+Workshop Mod Here: https://steamcommunity.com/sharedfiles/filedetails/?id=3823974655&utm_source=chatgpt.com
+
 ## Installation
 
 1. Fully close Project Zomboid.
