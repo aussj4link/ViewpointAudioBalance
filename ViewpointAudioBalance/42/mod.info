@@ -1,0 +1,11 @@
+name=Viewpoint - Audio Balance
+id=ViewpointAudioBalance
+description=Independent world-effects and background-ambience volume controls for Project Viewpoint first and third person. Adjust gain while playing; music, UI and isometric gain bypass this adjustment. Build 42.21.
+modversion=0.1.0
+versionMin=42.21
+versionMax=42.21
+require=Viewpoint,\ZombieBuddy
+ZBVersionMin=2.3.0
+ZBVersionMax=2.3.4
+javaJarFile=media/java/client/ViewpointAudioBalance.jar
+javaPkgName=com.memesnjunk.viewpointaudio

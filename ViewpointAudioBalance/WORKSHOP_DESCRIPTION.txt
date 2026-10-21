@@ -1,0 +1,45 @@
+[h1]Hear your surroundings in Viewpoint[/h1]
+
+Footsteps, doors and combat too quiet in first person? Viewpoint - Audio Balance adds independent volume controls for world effects and background ambience in Project Viewpoint's first- and third-person modes.
+
+Bring the world up to a comfortable level while keeping music and menu sounds at their usual levels.
+
+[h2]Features[/h2]
+[list]
+[*][b]World effects gain:[/b] adjust footsteps, doors, combat, zombie voices and other world sounds.
+[*][b]Background ambience gain:[/b] adjust the ambient soundscape separately from gameplay effects.
+[*][b]Flexible levels:[/b] mute, reduce, leave unchanged, or amplify up to 16x. Both controls start at 2x.
+[*][b]Adjust while playing:[/b] apply new levels or switch the effect off without reloading your save.
+[*][b]Viewpoint 3D only:[/b] the added gain switches off in isometric view. Music and UI sounds bypass it.
+[*][b]Local preferences:[/b] uses Build 42's built-in Mod Options system. No extra settings mod required.
+[/list]
+
+[h2]How to use[/h2]
+Enable the mod, then open [b]Options → Mods → Viewpoint - Audio Balance[/b]. Set world effects and ambience to taste and press Apply. [b]1x means unchanged.[/b]
+
+Start with a lower output volume and increase gradually. High gain can distort sounds that are already loud. A full game restart is required when installing, updating or removing the Java mod; the in-game enable checkbox can be changed live.
+
+[h2]Requirements[/h2]
+[list]
+[*]Project Zomboid [b]Build 42.21[/b].
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3809306528]Project Viewpoint[/url].
+[*][url=https://steamcommunity.com/sharedfiles/filedetails/?id=3619862853]ZombieBuddy[/url], with its Java agent installed.
+[/list]
+
+First version tested against the supplied Viewpoint 0.1.6.1 API and with ZombieBuddy 2.3.4. This package allows ZombieBuddy 2.3.0–2.3.4; newer agent versions need an updated compatibility build.
+
+[h2]What the ambience control covers[/h2]
+It controls sounds assigned to the game's Ambient group, including the combined day/night/weather soundscape and environmental hums. Layers inside one FMOD event share the same control; night insects and weather are not individually separated.
+
+[h2]Compatibility[/h2]
+Uses the existing game sounds and retains their spatial and distance settings. This addon changes playback volume only; zombie hearing and other gameplay rules are unchanged.
+
+Custom audio mods may assign sounds differently, and mods changing the same volume calculation may interact. Report the exact sound, camera mode, gain values and your console.txt if something behaves unexpectedly. Broader compatibility testing is ongoing.
+
+The separate Spatial Zombie Audio prototype is optional. This addon does not include or require its voice-distance changes.
+
+[h2]Credits and source[/h2]
+Development assistance: [b]ChatGPT (OpenAI)[/b].
+Thanks to the creators of Project Viewpoint and ZombieBuddy. This is an independent addon.
+
+Source code and documentation are included with the mod under the MIT license.
